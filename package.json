@@ -1,0 +1,26 @@
+{
+  "name": "simple-react-google-maps",
+  "version": "1.0.0",
+  "description": "quick and easy Google Maps package for React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mypwhas9letters/simple-react-google-maps.git"
+  },
+  "keywords": [
+    "react",
+    "google",
+    "maps",
+    "markers",
+    "simple"
+  ],
+  "author": "mypwhas9letters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mypwhas9letters/simple-react-google-maps/issues"
+  },
+  "homepage": "https://github.com/mypwhas9letters/simple-react-google-maps#readme"
+}
