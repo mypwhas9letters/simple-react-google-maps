@@ -8,10 +8,11 @@ function Demo() {
     <div>
       <h1>Demo with examples of the component</h1>
         <MyComponent
-          apiKey={"AIzaSyBi_Kd5tApkfq8bKUHZ2vG1Tp71CFxvoLo"}
+          apiKey={""}
           style={{height: "400px", width: "100%"}}
           zoom={6}
           center={{lat: 37.4224764, lng: -122.0842499}}
+          marker={{lat: 38.4224764, lng: -122.0842499}}
         />
     </div>
   );
