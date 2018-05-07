@@ -1,6 +1,6 @@
 {
   "name": "simple-react-google-maps",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Quick and easy Google Maps package for React.",
   "main": "lib/index.js",
   "scripts": {
@@ -10,7 +10,14 @@
     "docs": "webpack-dev-server --mode development",
     "docs:prod": "webpack --mode production"
   },
-  "keywords": ["react", "google", "maps", "map", "simple", "google maps"],
+  "keywords": [
+    "react",
+    "google",
+    "maps",
+    "map",
+    "simple",
+    "google maps"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "react": "^15.3.0 || ^16.2.0",

@@ -32,10 +32,19 @@ class SimpleGoogleMaps extends Component {
         }
       });
       if(this.props.marker){
-        new google.maps.Marker({
-          position: this.props.marker,
-          map: map,
-        });
+        if(Array.isArray(this.props.marker)){
+          for(let i of this.props.marker){
+            new google.maps.Marker({
+              position: i,
+              map: map,
+            });
+          }
+        }else{
+          new google.maps.Marker({
+            position: this.props.marker,
+            map: map,
+          });
+        }
       }
     }
     return (
