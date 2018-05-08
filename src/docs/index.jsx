@@ -12,7 +12,7 @@ function Demo() {
           style={{height: "400px", width: "100%"}}
           zoom={6}
           center={{lat: 37.4224764, lng: -122.0842499}}
-          marker={{lat: 37.4224764, lng: -122.0842499}}
+          markers={{lat: 37.4224764, lng: -122.0842499}}
         />
     </div>
   );

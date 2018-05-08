@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 var $S = require('scriptjs');
 
@@ -31,9 +32,9 @@ class SimpleGoogleMaps extends Component {
           lng: this.props.center.lng
         }
       });
-      if(this.props.marker){
-        if(Array.isArray(this.props.marker)){
-          for(let i of this.props.marker){
+      if(this.props.markers){
+        if(Array.isArray(this.props.markers)){
+          for(let i of this.props.markers){
             new google.maps.Marker({
               position: i,
               map: map,
@@ -41,7 +42,7 @@ class SimpleGoogleMaps extends Component {
           }
         }else{
           new google.maps.Marker({
-            position: this.props.marker,
+            position: this.props.markers,
             map: map,
           });
         }
@@ -54,3 +55,14 @@ class SimpleGoogleMaps extends Component {
 }
 
 export default SimpleGoogleMaps;
+
+SimpleGoogleMaps.propTypes = {
+  zoom: PropTypes.number.isRequired,
+  apiKey: PropTypes.string.isRequired,
+  center: PropTypes.objectOf(PropTypes.number.isRequired),
+  style: PropTypes.object.isRequired,
+  markers: PropTypes.oneOfType([
+    PropTypes.objectOf(PropTypes.number),
+    PropTypes.arrayOf(PropTypes.object)
+  ])
+}

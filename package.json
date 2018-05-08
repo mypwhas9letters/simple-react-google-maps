@@ -50,6 +50,7 @@
     "url": "git+https://github.com/mypwhas9letters/simple-react-google-maps.git"
   },
   "dependencies": {
+    "prop-types": "^15.6.1",
     "scriptjs": "^2.5.8"
   }
 }

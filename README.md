@@ -22,13 +22,13 @@ import GoogleMaps from "simple-react-google-maps"
   style={{height: "400px", width: "100%"}}
   zoom={6}
   center={{lat: 37.4224764, lng: -122.0842499}}
-  marker={{lat: 37.4224764, lng: -122.0842499}} //optional
+  markers={{lat: 37.4224764, lng: -122.0842499}} //optional
 />
 ```
 
 Multiple markers can also be rendered. Marker can also take in an array of geocodes.
 ```
-marker={
+markers={
   [
     {lat: 37.4224764, lng: -122.0842499},
     {lat: 37.5224764, lng: -121.0842499},
@@ -37,7 +37,7 @@ marker={
 }
 ```
 
-##Geocodes
+## Geocodes
 Google also provides a Geocoding service. By sending a request to their api, any address can be geocoded.
 https://maps.googleapis.com/maps/api/geocode/json?address=${your address}&key={your api key}
 
