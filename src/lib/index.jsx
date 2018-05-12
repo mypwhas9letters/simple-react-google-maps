@@ -23,6 +23,10 @@ class SimpleGoogleMaps extends Component {
     });
   }
 
+  shouldComponentUpdate(nextProps){
+    return this.props === nextProps
+  }
+
   render(){
     if(this.state.mapLoaded){
       var map = new window.google.maps.Map(document.getElementById('map'), {
