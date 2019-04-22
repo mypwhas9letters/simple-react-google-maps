@@ -6,7 +6,7 @@ A simple Google Maps Component for react applications.
 
 Google Maps Api Key
 Visit https://developers.google.com/maps/documentation/javascript/
-Create an Google Developers account and enable Google Maps Platform to obtain an api key.
+Create a Google Developers account and enable Google Maps Platform to obtain an api key.
 
 Install using the npm install command:
 ```
