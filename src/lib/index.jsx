@@ -49,7 +49,7 @@ class SimpleGoogleMaps extends Component {
       }
     }
     return (
-      <div id='map' style={this.props.style}></div>
+      <div id='map' className={this.props.className} style={this.props.style}></div>
     );
   }
 }
@@ -61,6 +61,7 @@ SimpleGoogleMaps.propTypes = {
   apiKey: PropTypes.string.isRequired,
   center: PropTypes.objectOf(PropTypes.number.isRequired),
   style: PropTypes.object.isRequired,
+  className: PropTypes.string.isRequired,
   markers: PropTypes.oneOfType([
     PropTypes.objectOf(PropTypes.number),
     PropTypes.arrayOf(PropTypes.object)
